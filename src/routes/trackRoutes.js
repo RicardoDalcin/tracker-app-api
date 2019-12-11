@@ -12,7 +12,7 @@ router.get('/tracks', async (req, res) => {
   res.send(tracks)
 })
 
-routes.post('/tracks', async (req, res) => {
+router.post('/tracks', async (req, res) => {
   const { name, locations } = req.body
 
   if (!name || !locations) {
